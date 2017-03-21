@@ -1,0 +1,58 @@
+{
+  "name": "auth0-rs256-verification",
+  "version": "1.0.0",
+  "description": "Demonstrates how to build a RESTful API using RS256 signed JWTs for authorization.",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "test": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgmeyer/auth0-rs256-verification.git"
+  },
+  "keywords": [
+    "Auth0",
+    "RS256",
+    "Resource",
+    "Server",
+    "Authorization"
+  ],
+  "author": "Shawn G. Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sgmeyer/auth0-rs256-verification/issues"
+  },
+  "homepage": "https://github.com/sgmeyer/auth0-rs256-verification#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.18.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "express-jwt": "^5.1.0",
+    "jwks-rsa": "^1.1.1",
+    "resource-router-middleware": "^0.6.0"
+  }
+}

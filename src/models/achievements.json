@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Code n00b",
+      "description": "You have completed your first commit and have just started your journey as a sofware engineer."
+    },
+    {
+      "name": "Code Apprentice",
+      "description": "You are following at least one Code Craftsman and have commited 10 PRs."
+    },
+    {
+      "name": "Code Journeyman",
+      "description": "You have submitted your first PR to a project with 25 or more stars."
+    },
+    {
+      "name": "Code Craftsman",
+      "description": "You regularly committing to a major repository."
+    },
+    {
+      "name": "Code Hero",
+      "description": "You have a stackoverflow score of 50,000 points and are a contributor to at least 1 repo with 100 or more stars."
+    },
+    {
+      "name": "Code Legend",
+      "description": "You are Donald Knuth."
+    }
+  ]
