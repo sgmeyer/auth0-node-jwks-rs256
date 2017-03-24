@@ -10,7 +10,7 @@ export default (config) => {
   let api = router();
 
   api.use('/achievements', scopeCheck('read:achievements'), achievements());
-  api.use('/users', scopeCheck('read:users read:achievements read:magic'), users());
+  api.use('/users', scopeCheck('read:users read:achievements read:profile'), users());
   
   api.get('/', (req, res) => {
     res.json({ version });

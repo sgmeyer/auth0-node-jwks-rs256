@@ -1,7 +1,7 @@
 {
   "name": "auth0-rs256-verification",
   "version": "1.0.0",
-  "description": "Demonstrates how to build a RESTful API using RS256 signed JWTs for authorization.",
+  "description": "Demonstrates how use Auth0's JWKS endpoint to lookup the certificate necessary to verify an RS256 signed JWT.",
   "main": "dist",
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
@@ -23,21 +23,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sgmeyer/auth0-rs256-verification.git"
+    "url": "git+https://github.com/auth0-samples/auth0-node-jwks-rs256.git"
   },
   "keywords": [
     "Auth0",
     "RS256",
     "Resource",
     "Server",
-    "Authorization"
+    "Authorization",
+    "JWKS",
+    "JWK"
   ],
   "author": "Shawn G. Meyer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sgmeyer/auth0-rs256-verification/issues"
+    "url": "https://github.com/auth0-samples/auth0-node-jwks-rs256/issues"
   },
-  "homepage": "https://github.com/sgmeyer/auth0-rs256-verification#readme",
+  "homepage": "https://github.com/auth0-samples/auth0-node-jwks-rs256#readme",
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
@@ -52,7 +54,7 @@
     "cors": "^2.8.1",
     "express": "^4.15.2",
     "express-jwt": "^5.1.0",
-    "jwks-rsa": "^1.1.1",
+    "request": "^2.81.0",
     "resource-router-middleware": "^0.6.0"
   }
 }

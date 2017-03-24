@@ -20,7 +20,6 @@ app.use(bodyParser.json({
 	limit : config.bodyLimit
 }));
 
-
 app.use('/api', jwtCheck, api({ config }));
 
 app.use((err, req, res, next) => {
