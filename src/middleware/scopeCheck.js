@@ -1,4 +1,4 @@
-import ForbiddenError from '../lib/errors/ForbiddenError';
+import { ForbiddenError } from '../lib/errors';
 
 export default (requiredScope) => {
   var middleware = (req, res, next) => {

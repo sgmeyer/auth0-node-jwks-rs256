@@ -1,4 +1,4 @@
-import { ArgumentError } from './errors/ArgumentError';
+import { ArgumentError } from './errors';
 import { JwksClient } from './JwksClient';
 
 const handleSigningKeyError = (err, cb) => {

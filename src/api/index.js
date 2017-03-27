@@ -6,11 +6,11 @@ import scopeCheck from '../middleware/scopeCheck';
 import users from './users';
 
 
-export default (config) => {
+export default () => {
   let api = router();
 
   api.use('/achievements', scopeCheck('read:achievements'), achievements());
-  api.use('/users', scopeCheck('read:users read:achievements read:profile'), users());
+  api.use('/users', scopeCheck('read:users read:achievements'), users());
   
   api.get('/', (req, res) => {
     res.json({ version });

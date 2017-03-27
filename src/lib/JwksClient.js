@@ -1,4 +1,5 @@
 import request from 'request';
+import { JwksError, SigningKeyNotFoundError } from './errors';
 
 import { certToPEM } from './utils';
 
