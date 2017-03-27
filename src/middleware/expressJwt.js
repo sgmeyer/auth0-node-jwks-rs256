@@ -35,7 +35,7 @@ export default (options) => {
 
     var tasks = [
       function getSecret(callback) {
-         secretCallback(req, decodedToken.header, decodedToken.payload, callback);
+        secretCallback(req, decodedToken.header, decodedToken.payload, callback);
       },
       function verifyToken(secret, callback) {
         jwt.verify(token, secret, options, function(err, decoded) {
