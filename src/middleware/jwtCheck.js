@@ -1,11 +1,11 @@
-import jwt from 'express-jwt';
 import dotenv from 'dotenv';
 
+import expressJwt from './expressJwt';
 import expressJwtSecret from '../lib/expressJwtSecret';
 
 dotenv.load();
 
-export const jwtCheck = jwt({
+export const jwtCheck = expressJwt({
   secret: expressJwtSecret({
     jwksUri: `https://${process.env.AUTH0_TENANT}.auth0.com/.well-known/jwks.json`
   }),

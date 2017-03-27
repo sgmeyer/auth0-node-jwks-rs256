@@ -15,7 +15,6 @@ export class JwksClient {
       json: true
     }, (err, res) => {
       if (err || res.statusCode < 200 || res.statusCode >= 300) {
-        // This will yield a 500 as it is unexpected.
         if (res) {
           return cb(new JwksError(res.body && (res.body.message || res.body) || res.statusMessage || `Http Error ${res.statusCode}`));
         }
@@ -43,14 +42,8 @@ export class JwksClient {
                     && key.kid           // The `kid` must be present to be useful for later
                     && key.x5c && key.x5c.length // Has useful public keys (we aren't using n or e)
        ).map(key => {
-          // Checks if the x5c is present and then converts cert to pem
-          // This will always be available, but doesn't hurt to have a fallback.
-          // if (key.x5c && key.x5c.length) {
-            return { kid: key.kid, nbf: key.nbf, publicKey: certToPEM(key.x5c[0]) };
-          // } else {
-          //   return { kid: key.kid, nbf: key.nbf, rsaPublicKey: rsaPublicKeyToPEM(key.n, key.e) };
-          // }
-        });
+         return { kid: key.kid, nbf: key.nbf, publicKey: certToPEM(key.x5c[0]) };
+       });
 
       // if one signing key doesn't exist we have a problem... Kaboom.
       if (!signingKeys.length) {
