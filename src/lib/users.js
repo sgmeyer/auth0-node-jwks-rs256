@@ -1,8 +1,7 @@
-import userData from '../models/users';
 import achievements from './achievements';
+import userData from '../data/users';
 
 export default {
-
   list: () => {
     const users = userData;
     

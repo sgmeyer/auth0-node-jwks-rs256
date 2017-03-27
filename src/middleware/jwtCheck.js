@@ -1,4 +1,3 @@
-import express from 'express';
 import jwt from 'express-jwt';
 import dotenv from 'dotenv';
 

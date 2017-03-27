@@ -1,4 +1,4 @@
-import achievementData from '../models/achievements';
+import achievementData from '../data/achievements';
 
 export default {
   list: () => {
