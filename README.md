@@ -24,7 +24,7 @@ Create a .env file in the root directory:
 
 ```
 PORT=3000
-AUTH0_TENANT=your-auth0-tenant-subdomain
+AUTH0_TENANT=your-tenant-subdomain
 ```
 
 Then run the code on port 3000:

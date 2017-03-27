@@ -41,7 +41,7 @@ export class JwksClient {
         .filter(key => key.use === 'sig' // JWK property `use` determines the JWK is for signing
                     && key.kty === 'RSA' // We are only supporting RSA (RS256)
                     && key.kid           // The `kid` must be present to be useful for later
-                    && ey.x5c && key.x5c.length // Has useful public keys (we aren't using n or e)
+                    && key.x5c && key.x5c.length // Has useful public keys (we aren't using n or e)
        ).map(key => {
           // Checks if the x5c is present and then converts cert to pem
           // This will always be available, but doesn't hurt to have a fallback.
