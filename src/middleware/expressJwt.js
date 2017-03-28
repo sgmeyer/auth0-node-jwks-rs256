@@ -26,7 +26,6 @@ export default (options) => {
 
     // This could fail.  If it does handle as 401 as the token is invalid.
     var decodedToken = jwt.decode(token, {complete: true});
-    var kid = decodedToken.header.kid;
 
     if (decodedToken.header.alg !== 'RS256') {
       // we are only supporting RS256 so fail if this happens.
