@@ -4,7 +4,7 @@
 
 This sample is intended as an introduction to the Auth0 JWKS endpoint.  The purpose is to demonstrate how one would verify an RS256 signed JWT while using the JWKS endpoint to lookup the public certificate necessary verify the token signature.  This sample should be used as a basic guide for building your own token verifier, however the sample is not considered production ready.  This sample lacks necessary error handling, caching, and other production qualities.
 
-If you are building a NodeJS application using Express or HapiJS it is recommended that you use the production grade moduels provided by Autho ([node-jwks-rsa](https://github.com/auth0/node-jwks-rsa) and [express-jwt](https://github.com/auth0/express-jwt)).  The sample code provided here used these two libraries as the basis for the coding examples.  This [sample repository](https://github.com/sgmeyer/auth0-rs256-verification) demonstrates that.
+If you are building a NodeJS application using Express or HapiJS it is recommended that you use the production grade moduels provided by Auth0 ([node-jwks-rsa](https://github.com/auth0/node-jwks-rsa) and [express-jwt](https://github.com/auth0/express-jwt)).  The sample code provided here used these two libraries as the basis for the coding examples.  This [sample repository](https://github.com/sgmeyer/auth0-rs256-verification) demonstrates that.
 
 ## Setting Up
 
