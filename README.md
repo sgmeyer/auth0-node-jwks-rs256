@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/sgmeyer/auth0-node-jwks-rs256)
+
 # Auth0 RS256 Validation Using JWKS
 
 ## Purpose
